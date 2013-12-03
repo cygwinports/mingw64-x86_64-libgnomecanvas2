@@ -1,0 +1,19 @@
+CROSS_HOST="x86_64-w64-mingw32"
+ORIG_PN="libgnomecanvas"
+inherit cross gnome2
+
+NAME="mingw64-x86_64-libgnomecanvas2"
+VERSION=2.30.3
+RELEASE=2
+CATEGORY="Devel"
+SUMMARY="GNOME canvas widget library for Win64 toolchain"
+DESCRIPTION="The GNOME canvas is an engine for structured graphics that offers
+a rich imaging model, high performance rendering, and a powerful, high-level
+API.  It offers a choice of two rendering back-ends, one based on Xlib for
+extremely fast display, and another based on Libart, a sophisticated,
+antialiased, alpha-compositing engine.  Applications have a choice between the
+Xlib imaging model or a superset of the PostScript imaging model, depending on
+the level of graphic sophistication required."
+HOMEPAGE="http://developer.gnome.org/arch/imaging/canvas.html"
+
+CYGCONF_ARGS="--enable-glade"
